@@ -21,7 +21,7 @@ Mac (unchanged)                      Server
 - **Redacted.** Common secret shapes (`sk-…`, `ghp_…`, `AKIA…`, JWTs, `Bearer …`, `*_KEY=`/`"secret": "…"`)
   become `[REDACTED]`. This is pattern-based, so treat the digest as sensitive anyway.
 - **No code is copied.** Agents read code from GitHub (`gh` / GitHub MCP) on their own.
-- **Excludes.** Folders listed in `EXCLUDE_DIRS` (for example, work on a company GitLab) never leave the Mac.
+- **Excludes.** Folders listed in `EXCLUDE_DIRS`.
 
 ## Requirements
 
