@@ -1,8 +1,7 @@
 # claude-hub
 
-Give your always-on AI agents (e.g. [nanobot](https://github.com/HKUDS/nanobot), Hermes) the context of
-your [Claude Code](https://docs.claude.com/en/docs/claude-code) sessions, without changing how Claude
-Code works on your Mac.
+Give your always-on AI agents (e.g. [nanobot](https://github.com/HKUDS/nanobot), [Hermes Agent](https://github.com/nousresearch/hermes-agent)) the context of
+your [Claude Code](https://docs.claude.com/en/docs/claude-code) sessions.
 
 ```
 Mac (unchanged)                      Server
@@ -68,6 +67,16 @@ ssh $SERVER 'rm -rf ~/claude-hub/data/-Users-<you>-<path-with-dashes>* ~/claude-
 ```
 
 The history sync does not use `--delete`, on purpose: the server keeps sessions that Claude Code prunes locally.
+
+## Usage
+
+You can use this method to get a claude session from your mac into your "Server" with an agent on it, so the agent in your server can get those session context.
+
+To check if it works try to ask to your agent:
+
+``` text
+Use skill claude-context: check what I was working on today on 'xxx' projects
+```
 
 ## Uninstall
 
